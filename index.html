@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vector Simulator</title>
+    <script type="module" src="./src/main.js"></script>
+    <link rel="stylesheet" href="./src/style.css">
 </head>
 <body>
-    <!--  comment -- -->
+    <h1>Vector Simulator</h1>
+    <div>
+        <label for="magnitude">Magnitude:</label>
+        <input type="number" id="magnitude" value="50">
+        <label for="direction">Direction (degrees):</label>
+        <input type="number" id="direction" value="45">
+        <div>
+            <label>
+                <input type="radio" name="operation" value="add" checked>
+                Add Vector
+            </label>
+            <label>
+                <input type="radio" name="operation" value="subtract">
+                Subtract Vector
+            </label>
+        </div>
+        <button id="addVector">Apply Vector</button>
+        <button id="clearVectors">Clear Vectors</button>
+    </div>
+    <canvas id="drawingPad"></canvas>
 </body>
 </html>
